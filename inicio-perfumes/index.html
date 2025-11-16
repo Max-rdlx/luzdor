@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes de Elite - Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html" class="home-link">LuzDorl</a></div>
+
+        <!-- 🔍 Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar perfume...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></div>
+    </nav>
+
+    <header class="hero">
+        <h1>Perfumes de Elite</h1>
+        </div>
+    </header>
+    <center><a href="../index.html" class="btn">volver al inicio </a></center>
+    
+    
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+            <button class="checkout-btn">Realizar Compra</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <main class="products-grid" id="product-list">
+            <!-- Producto: Versace Eros -->
+            <div class="product-card" data-name="Versace Eros">
+                <img src="../imagenes/eros-1.jpg" alt="Versace Eros">
+                <h3>Versace Eros</h3>
+                <p class="price">$120.00</p>
+                <p class="description">Una fragancia seductora y masculina con notas de menta, manzana verde y vainilla.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="1" data-name="Versace Eros" data-price="120.00">Agregar al Carrito</button>
+                    <a href="../html/prd-eros.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Producto: Moschino Fresh -->
+            <div class="product-card" data-name="Moschino Fresh">
+                <img src="../imagenes/moschino-3.jpg" alt="Moschino Fresh">
+                <h3>Moschino Fresh</h3>
+                <p class="price">$95.00</p>
+                <p class="description">Una fragancia fresca y moderna con notas cítricas y florales.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="2" data-name="Moschino Fresh" data-price="95.00">Agregar al Carrito</button>
+                    <a href="../html/prd-moschino.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Nuevo: Dior Sauvage (apartado con imagen) -->
+            <div class="product-card" data-name="Dior Sauvage">
+                <img src="../imagenes/sauvage 1.jpg" alt="Dior Sauvage">
+                <h3>Dior Sauvage</h3>
+                <p class="price">$150.00</p>
+                <p class="description">Una fragancia intensa, fresca y especiada, icónica por su estela varonil.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="3" data-name="Dior Sauvage" data-price="150.00">Agregar al Carrito</button>
+                    <a href="../html/sauvage.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Nuevo: Perfume sin imagen (información solamente) -->
+            <div class="product-card" data-name="bleu chanel">
+                <img src="../imagenes/bleu 1.jpg" alt="bleu chanel">
+                <h3>bleu chanel</h3>
+                <p class="price">$85.00</p>
+                <p class="description">Una fragancia sofisticada y nocturna con notas de vainilla y madera de cedro.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="4" data-name="Nocturne" data-price="85.00">Agregar al Carrito</button>
+                    <a href="../html/bleu.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+            
+            <!-- 11 imágenes adicionales: productos de muestra -->
+            <div class="product-card" data-name="yves saint laurent">
+                <img src="../imagenes/yves1.jpg" alt="Yves Saint Laurent Y Eau de Parfum">
+                <h3>Yves Saint Laurent Y Eau de Parfum</h3>
+                <p class="price">$70.00</p>
+                <p class="description">Perfume moderno y audaz que mezcla frescura aromática con intensidad, simbolizando creatividad y determinación.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="5" data-name="Yves Saint Laurent Y Eau de Parfum" data-price="70.00">Agregar al Carrito</button>
+                    <a href="../html/yvez.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Armani Acqua di Gio Profondo">
+                <img src="../imagenes/gio1.jpg" alt="Armani Acqua di Gio Profondo">
+                <h3>Armani Acqua di Gio Profondo</h3>
+                <p class="price">$72.00</p>
+                <p class="description"> fragancia masculina fresca y marina, con toques cítricos y un fondo amaderado elegante</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="6" data-name="Armani Acqua di Gio Profondo" data-price="72.00">Agregar al Carrito</button>
+                    <a href="../html/aqua.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Azzaro The Most Wanted">
+                <img src="../imagenes/wanted" alt="Azzaro The Most Wanted">
+                <h3>Azzaro The Most Wanted</h3>
+                <p class="price">$68.00</p>
+                <p class="description">fragancia intensa y seductora, con notas especiadas dulces, vetiver y acordes ambarados que proyectan misterio y poder.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="7" data-name="Azzaro The Most Wanted" data-price="68.00">Agregar al Carrito</button>
+                    <a href="../html/wanted.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Jean Paul Gaultier Ultra Male Edt">
+                <img src="../imagenes/jean1.jpg" alt="Jean Paul Gaultier Ultra Male Edt">
+                <h3>Jean Paul Gaultier Ultra Male Edt</h3>
+                <p class="price">$75.00</p>
+                <p class="description">fragancia dulce, intensa y seductora, con pera, lavanda, vainilla y maderas que crean un aroma audaz y provocador.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="8" data-name="Jean Paul Gaultier Ultra Male Edt" data-price="75.00">Agregar al Carrito</button>
+                    <a href="../html/jean.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Burberry Hero">
+                <img src="../imagenes/hero1.jpg" alt="Burberry Hero">
+                <h3>Burberry Hero</h3>
+                <p class="price">$65.00</p>
+                <p class="description">fragancia fresca y amaderada que mezcla bergamota, enebro y maderas de cedro para un aroma moderno, limpio y poderoso.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="9" data-name="Burberry Hero" data-price="65.00">Agregar al Carrito</button>
+                    <a href="../html/hero.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Carolina Herrera For Men">
+                <img src="../imagenes/herrera1.jpg" alt="Carolina Herrera For Men">
+                <h3>Carolina Herrera For Men</h3>
+                <p class="price">$80.00</p>
+                <p class="description">fragancia elegante y sofisticada, con notas frescas y amaderadas que reflejan un estilo clásico y moderno a la vez.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="10" data-name="Carolina Herrera For Men" data-price="80.00">Agregar al Carrito</button>
+                    <a href="../html/herrera.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Miss Dior Eau de Parfum">
+                <img src="../imagenes/miss1" alt="Miss Dior Eau de Parfum">
+                <h3>Miss Dior Eau de Parfum</h3>
+                <p class="price">$69.00</p>
+                <p class="description">fragancia femenina elegante y floral, con notas de rosa, jazmín y pachulí que crean un aroma sofisticado y romántico..</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="11" data-name="Miss Dior Eau de Parfum" data-price="69.00">Agregar al Carrito</button>
+                    <a href="../html/miss.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="PLancôme La Vie Est Belle">
+                <img src="../imagenes/belle1.jpg" alt="PLancôme La Vie Est Belle">
+                <h3>PLancôme La Vie Est Belle</h3>
+                <p class="price">$78.00</p>
+                <p class="description">fragancia femenina dulce y floral, con notas de iris, jazmín y pachulí que transmiten alegría y elegancia.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="12" data-name="PLancôme La Vie Est Belle" data-price="78.00">Agregar al Carrito</button>
+                    <a href="../html/belle.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Chanel Coco Mademoiselle">
+                <img src="../imagenes/coco1" alt="Chanel Coco Mademoiselle">
+                <h3>Chanel Coco Mademoiselle</h3>
+                <p class="price">$66.00</p>
+                <p class="description">fragancia femenina fresca y oriental, con notas de naranja, jazmín y pachulí que crean un aroma sofisticado y seductor.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="13" data-name="Chanel Coco Mademoiselle" data-price="66.00">Agregar al Carrito</button>
+                    <a href="../html/coco.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Carolina Herrera Good Girl">
+                <img src="../imagenes/good1.jpg" alt="Carolina Herrera Good Girl">
+                <h3>Carolina Herrera Good Girl</h3>
+                <p class="price">$74.00</p>
+                <p class="description">fragancia femenina oriental y floral, con notas de jazmín, cacao y tonka que crean un aroma seductor y sofisticado.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="14" data-name="Carolina Herrera Good Girl" data-price="74.00">Agregar al Carrito</button>
+                    <a href="../html/good.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-name="Yves Saint Laurent Libre">
+                <img src="../imagenes/saint1" alt="Yves Saint Laurent Libre">
+                <h3>Yves Saint Laurent Libre</h3>
+                <p class="price">$82.00</p>
+                <p class="description">fragancia femenina moderna y audaz, con notas de lavanda, flor de azahar y vainilla que crean un aroma distintivo y elegante.</p>
+                <div class="product-actions">
+                    <button class="add-to-cart" data-id="15" data-name="Yves Saint Laurent Libre" data-price="82.00">Agregar al Carrito</button>
+                    <a href="../html/saint.html" class="view-details">Ver Detalles</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d4af37;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.logo span {
+  color: #d4af37;
+}
+
+/* SECCIONES GENERALES */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* EQUIPO */
+.team {
+  text-align: center;
+}
+
+.card {
+  background: #111;
+  border: 2px solid #d4af37;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 650px;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Aro dorado al pasar el mouse */
+.card:hover {
+  transform: scale(1.03);
+  border: 3px solid #ffda4f;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+}
+
+.card h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* BOTÓN VOLVER AL INICIO */
+.volver-inicio {
+  bottom: 90px;
+  left: 25px;
+  background: #d4af37;
+  color: #000;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.volver-inicio:hover {
+  background: #ffda4f;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.6);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  border-top: 2px solid #d4af37;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  color: #d4af37;
+}
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Centrado horizontal */
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: var(--accent-gold, #ffd700);
+    background-color: var(--secondary-bg, #0a0a0a);
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-gold, #ffd700);
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+}
+
+/* Hover */
+.social-btn:hover {
+    background-color: var(--accent-gold, #ffd700);
+    color: #000;
+    transform: scale(1.05);
+}
