@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Sauvage - Detalles</title>
+    <link rel="stylesheet" href="../inicio-perfumes/style.css">
+    <link rel="stylesheet" href="../css/yvez.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="../index.html" class="home-link">Perfumes de Elite</a></div>
+        <button class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+    </nav>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+            <button class="checkout-btn">Realizar Compra</button>
+        </div>
+    </div>
+
+    <main class="product-detail">
+        <div class="product-image">
+            <div class="gallery-main">
+                <img id="mainImage" src="../imagenes/coco1" alt="Dior Sauvage">
+            </div>
+            <div class="gallery-thumbs">
+                <button class="thumb" data-src="../imagenes/coco1."><img src="../imagenes/coco1" alt="Sauvage 1"><span>Sauvage 1</span></button>
+                <button class="thumb" data-src="../imagenes/coco2.jpg"><img src="../imagenes/coco2.jpg" alt="Sauvage 2"><span>Sauvage 2</span></button>
+                <button class="thumb" data-src="../imagenes/coco3"><img src="../imagenes/coco3" alt="Sauvage 3"><span>Sauvage 3</span></button>
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>Chanel Coco Mademoiselle</h1>
+            <p class="price">$68.00</p>
+            <div class="product-description">
+                <h2>Descripción</h2>
+                <p>fragancia femenina fresca y oriental, con notas de naranja, jazmín y pachulí que crean un aroma sofisticado y seductor.</p>
+                <h3>Notas</h3>
+                <ul>
+                    <li><strong>Salida:</strong> Bergamota de Calabria</li>
+                    <li><strong>Corazón:</strong> Pimienta y lavanda</li>
+                    <li><strong>Fondo:</strong> Ambroxan, madera de cedro</li>
+                </ul>
+            </div>
+            <button class="add-to-cart" data-id="13" data-name="Chanel Coco Mademoiselle" data-price="68.00">Agregar al Carrito</button>
+            <a href="../inicio-perfumes/index.html  " class="view-details">Volver al Inicio</a>
+        </div>
+    </main>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armani Acqua di Gio Profondo</title>
+
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="../inicio-perfumes/style.css">
+
+    <!-- Estilo específico -->
+    <link rel="stylesheet" href="../css/yvez.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../index.html" class="home-link">Perfumes de Elite</a>
+        </div>
+
+        <button class="cart-icon" id="open-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </button>
+    </nav>
+
+    <!-- CARRITO (SIDEBAR) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+
+        <div class="cart-items" id="cart-items"></div>
+
+        <div class="cart-total">
+            <h3>Total: <span id="cart-total">$0.00</span></h3>
+            <button class="checkout-btn">Realizar Compra</button>
+        </div>
+    </div>
+
+    <!-- DETALLE DEL PRODUCTO -->
+    <main class="product-detail">
+        <div class="product-image">
+            <div class="gallery-main">
+                <img id="mainImage" src="../imagenes/gio1.jpg" alt="Acqua di Gio Profondo">
+            </div>
+
+            <div class="gallery-thumbs">
+                <button class="thumb" data-src="../imagenes/gio1.jpg">
+                    <img src="../imagenes/gio1.jpg">
+                </button>
+
+                <button class="thumb" data-src="../imagenes/gio2.jpg">
+                    <img src="../imagenes/gio2.jpg">
+                </button>
+
+                <button class="thumb" data-src="../imagenes/gio3.jpg">
+                    <img src="../imagenes/gio3.jpg">
+                </button>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Armani Acqua di Gio Profondo</h1>
+            <p class="price">$72.00</p>
+
+            <div class="product-description">
+                <h2>Descripción</h2>
+                <p>Fragancia masculina fresca y marina, con toques cítricos y un fondo amaderado elegante.</p>
+
+                <h3>Notas</h3>
+                <ul>
+                    <li><strong>Salida:</strong> Bergamota de Calabria</li>
+                    <li><strong>Corazón:</strong> Pimienta y lavanda</li>
+                    <li><strong>Fondo:</strong> Ambroxan, madera de cedro</li>
+                </ul>
+            </div>
+
+            <button class="add-to-cart"
+                data-id="gio-01"
+                data-name="Armani Acqua di Gio Profondo"
+                data-price="72.00">
+                Agregar al Carrito
+            </button>
+
+            <a href="../inicio-perfumes/index.html"class="view-details">Volver al Inicio</a>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>
